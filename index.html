@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FATHIMA IBA | Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* ===== General Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f9f7f2;
+      color: #3e2e1c;
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Header ===== */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #3e2e1c;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #d4b17b;
+    }
+
+    /* ===== Section Styles ===== */
+    .section {
+      padding: 100px 50px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* ===== Home ===== */
+    .home {
+      text-align: center;
+      padding-top: 140px;
+    }
+
+    .home h1 {
+      font-size: 2.5rem;
+      color: #3e2e1c;
+    }
+
+    .home h1 span {
+      color: #a67c52;
+    }
+
+    .home p {
+      margin: 20px auto;
+      width: 80%;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #5a3b14;
+    }
+
+    .btn {
+      background-color: #3e2e1c;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #a67c52;
+    }
+
+    /* ===== About ===== */
+    .about {
+      background-color: #fffaf2;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #3e2e1c;
+    }
+
+    .about-box {
+      background: #fff;
+      border: 1px solid #d4b17b;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 25px;
+      max-width: 800px;
+      margin: 15px auto;
+      text-align: left;
+    }
+
+    .about-box h3 {
+      color: #3e2e1c;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .about-box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-box li {
+      margin-bottom: 8px;
+      color: #5a3b14;
+    }
+
+    /* ===== Projects ===== */
+    .projects {
+      background-color: #fdfaf5;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2.2rem;
+      color: #3e2e1c;
+      margin-bottom: 30px;
+    }
+
+    .project-box {
+      background: #fff;
+      border: 1px solid #d4b17b;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      padding: 25px;
+      max-width: 800px;
+      margin: 15px auto;
+      text-align: left;
+    }
+
+    .project-box h3 {
+      font-size: 1.4rem;
+      color: #a67c52;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Contact ===== */
+    .contact {
+      background-color: #fffaf2;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      color: #3e2e1c;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      color: #3e2e1c;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .contact-info i {
+      color: #d4b17b;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background-color: #3e2e1c;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 80px 20px; }
+      .about-box, .project-box { width: 95%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section home">
+<div style="text-align:center;">
+  <img src="profile.jpg" alt="My Profile Picture" 
+       style="width:180px; height:180px; border-radius:50%; object-fit:cover; border:3px solid #555;">
+</div>
+    <h1>Hi, I'm <span><div style="text-align:center;">
+</div>Fathima Iba</span></h1>
+    <p>
+      A passionate learner in <b>Data Science</b> with a background in <b>BA Economics</b>. 
+      I enjoy analyzing data, finding insights, and combining creativity with analytics 
+      to solve problems effectively.
+    </p>
+      </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2>About Me</h2> A passionate learner in <b>Data Science</b> with a background in <b>BA Economics</b>. 
+      I enjoy analyzing data, finding insights, and combining creativity with analytics 
+      to solve problems effectively.
+
+    <div class="about-box">
+      <h3>Education</h3>
+      <ul>
+        <li><b>PG in Data Science (Ongoing) -WESTBERG INTERNATIONAL INSTITUTION</b> - Calicut University</li>
+        <li><b>BA Economics</b> - PPTM College, Calicut University</li>
+      </ul>
+    </div>
+
+    <div class="about-box">
+      <h3>Skills</h3>
+      <ul>
+        <li>Python, SQL, Excel, HTML, CSS</li>
+        <li>Data Visualization & Analysis</li>
+        <li>Teamwork, Communication, Problem Solving</li>
+      </ul>
+    </div>
+
+    <div class="about-box">
+      <h3>Languages</h3>
+      <ul>
+        <li>English</li>
+        <li>Arabic</li>
+        <li>Malayalam</li>
+        <li>Hindi</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <h2>My Projects</h2>
+
+    <div class="project-box">
+      <h3>1. Data Analysis Project</h3>
+      <p>
+        Performed data cleaning and analysis on real-world datasets using Python and Pandas, 
+        visualizing key business insights.
+      </p>
+
+      <h3>2. Personal Portfolio Website</h3>
+      <p>
+        Designed and developed this responsive portfolio using HTML and CSS to showcase my skills and projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> fathimaiba@example.com</p>
+      <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/fathimaiba</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Fathima Iba | Data Science Learner</p>
+  </footer>
+
+</body>
+</html>
